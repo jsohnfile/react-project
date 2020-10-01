@@ -18,22 +18,21 @@ function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="" />
+                <Avatar src={avatar} />
 
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
-                        <h3>Jae Sohn {" "}<span className="post__headerSpecial"><VerifiedUserIcon className="post__badge">
-                        </VerifiedUserIcon>
+                        <h3>{displayName} {" "}<span className="post__headerSpecial">{verified && <VerifiedUserIcon className="post__badge" />} {username}
                         </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>I challenge you to build a Twitter clone</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="https://media3.giphy.com/media/65ATdpi3clAdjonZ39/giphy.gif" alt=""></img>
+                <img src={image} alt=""></img>
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
