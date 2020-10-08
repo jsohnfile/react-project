@@ -15,7 +15,7 @@ function TweetBox() {
             verified: true,
             text: tweetMessage,
             image: tweetImage,
-            avatar: "https://i.imgur.com/uKAPxKT.jpg"
+            avatar: "https://i.imgur.com/EZfpfTB.jpg"
 
         })
         setTweetMessage("");
